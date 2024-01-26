@@ -1,0 +1,82 @@
+/* 
+// *** *** *** Custom Properties *** *** *** 
+*/
+:root {
+    --font-family: "Outfit", sans-serif;
+    --font-size: 16px;
+    --font-size-paragraph: 18px;
+    --font-weight-light: 300;
+    --font-weight-regular: 400; 
+    --font-weight-semi-bold: 600;
+    --layout-mobile: 375px;
+    --layout-desktop: 1440px;
+    --color-soft-blue: hsl(215, 51%, 70%);
+    --color-cyan: hsl(178, 100%, 50%);
+    --color-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --color-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --color-very-dark-blue-line: hsl(215, 32%, 27%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+/* 
+// *** *** *** Reset *** *** *** 
+*/
+html {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-regular);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+a { text-decoration: none; }
+
+picture { display: block; }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+hr {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+/* 
+// *** *** *** Site Styles *** *** *** 
+*/
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-very-dark-blue-main-bg);
+}
+
+.main { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.footer { 
+    padding: 1rem; 
+    color: var(--color-white);
+}
+
+p { font-size: var(--font-size-paragraph); }

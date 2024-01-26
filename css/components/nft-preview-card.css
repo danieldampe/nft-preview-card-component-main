@@ -1,0 +1,116 @@
+/*
+// *** *** *** NFT Preview Card *** *** ***
+*/
+.nft-preview-card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(360px, 80%, 390px);
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--color-very-dark-blue-card-bg);
+    border-radius: 20px;
+}
+
+/*
+// *** *** *** Main *** *** ***
+*/
+.nft-preview-card__main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+}
+
+.nft-preview-card-main__img,
+.nft-preview-card-main__title,
+.nft-preview-card-main__content { flex-basis: 100%; }
+
+.nft-preview-card-main__price,
+.nft-preview-card-main__time-left { 
+    display: flex;
+    gap: 0.5rem;
+    flex-basis: 50%; 
+}
+
+.nft-preview-card-main__picture { 
+    position: relative;
+    margin-bottom: 0.5rem;
+    border-radius: 10px; 
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.nft-preview-card-main__picture:hover >
+.nft-preview-card-main-picture__bg { display: block; }
+
+.nft-preview-card-main-picture__bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: hsl(178, 100%, 50%, 50%);
+}
+
+.nft-preview-card-main-picture-bg__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nft-preview-card-main__title {
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.nft-preview-card-main__title:hover { color: var(--color-cyan); }
+
+.nft-preview-card-main__content { 
+    line-height: 1.6rem;
+    color: var(--color-soft-blue); 
+}
+
+.nft-preview-card-main-price__num {
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--color-cyan);
+}
+
+.nft-preview-card-main__time-left {
+    justify-content: flex-end;
+    color: var(--color-soft-blue);
+}
+
+/*
+// *** *** *** Line *** *** ***
+*/
+.nft-preview-card__line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-very-dark-blue-line);
+}
+
+/*
+// *** *** *** Footer *** *** ***
+*/
+.nft-preview-card__footer { 
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-soft-blue); 
+}
+
+.nft-preview-card-footer__img {
+    width: 2.2rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.nft-preview-card-footer-txt__author { 
+    color: var(--color-white); 
+    cursor: pointer;
+}
+
+.nft-preview-card-footer-txt__author:hover { color: var(--color-cyan); }

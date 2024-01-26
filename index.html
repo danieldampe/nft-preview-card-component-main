@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components/nft-preview-card.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <main id="main" class="main"></main>
+        <footer class="footer attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+        </footer>
+    </div>
+    <!-- Components -->
+    <template id="nft-preview-card">
+        <div class="nft-preview-card">
+            <div class="nft-preview-card__main">
+                <div class="nft-preview-card-main__picture">
+                    <img class="nft-preview-card-main-picture__img" data-img>
+                    <div class="nft-preview-card-main-picture__bg">
+                        <img src="./images/icon-view.svg" alt="Icon View" class="nft-preview-card-main-picture-bg__icon">
+                    </div>
+                </div>
+                <div class="nft-preview-card-main__title" data-title></div>
+                <p class="nft-preview-card-main__content" data-content></p>
+                <div class="nft-preview-card-main__price">
+                    <img src="./images/icon-ethereum.svg" alt="Icon Ethereum" class="nft-preview-card-main-price__icon">
+                    <div class="nft-preview-card-main-price__num" data-price></div>
+                </div>
+                <div class="nft-preview-card-main__time-left">
+                    <img src="./images/icon-clock.svg" alt="Icon Clock" class="nft-preview-card-main-time-left__icon">
+                    <div class="nft-preview-card-main-time-left__txt" data-time-left></div>
+                </div>
+            </div>
+            <div class="nft-preview-card__line"></div>
+            <div class="nft-preview-card__footer">
+                <img class="nft-preview-card-footer__img" data-author-img>
+                <div class="nft-preview-card-footer__txt">
+                    Creation of <span class="nft-preview-card-footer-txt__author" data-author-name></span>
+                </div>
+            </div>
+        </div>
+    </template>
+    <!-- JS -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
